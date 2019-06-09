@@ -1,0 +1,176 @@
+/* styles.css for sticks game */
+
+/* NEric Meyer's reset
+----------------------------------------------- */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.5;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/**** end of reset  ******/
+
+
+/*** start of sticks css ****/
+
+html {
+	box-sizing: border-box;
+	min-height: 100vh;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	height: 100%;
+	margin: auto;
+	font-family: sans-serif;
+}
+
+p {
+	font-size: 18px;
+}
+
+h1 {
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+button {
+	padding: 8px;
+	font-size: 1.2rem;
+	font-weight: 600;
+	border-radius: 15px;
+	color: lightcyan;
+	background-color: darkblue;
+}
+
+button:focus {
+	outline: none;
+}
+
+button:disabled, input:disabled {
+	background-color: darkgray;
+}
+
+.wrapper {
+	max-width: 1280px;
+	min-height: 100vh;
+	margin: auto;
+	background-color: lightgray;
+	padding-bottom: 30px;
+}
+
+header {
+	text-align: center;
+	padding-top:20px;
+	font-family: 'Righteous', cursive;
+	font-size: 2.5em;
+}
+
+header h1 {
+	font-size: 3rem;
+	font-weight: 500;
+	margin-top: 1rem;
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid black;
+	margin: 3vw 25vw;
+	padding: 10px 5px;
+}
+
+#msg-box {
+	border:3px solid blue;
+	text-align: center;
+	margin: 3vw 20vw;
+}
+
+#pickup {
+	margin-bottom: 20px;
+}
+
+#pickup-btn {
+	margin-bottom: 20px;
+}
+
+
+/*  modal css  */
+#modal-layer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,0.7);
+	z-index: 999;
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+
+#wins-overlay {
+	width: 70%;
+	border: 3px solid blue;
+	background-color: lightblue;
+	color: black;
+	display: flex;
+	flex-direction: column;
+	max-width: 580px;
+	padding: 40px 10px;
+}
+
+#wins-overlay p {
+	padding: 10px 0;
+	font-size: 1.5rem;
+}

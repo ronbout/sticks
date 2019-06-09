@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Sticks - Player v Machine</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+	 crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/sticks.js"></script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header>
+			<h1>Sticks<br>Player v Machine</h1>
+		</header>
+		<main>
+			<div id="msg-box" class="flex-container">
+				<h3 id="msg">Welcome to the Sticks Game<br>To begin play, select # sticks for Player 1</h3>
+			</div>
+			<div id="remain-cont" class="flex-container">
+				<div id="remain-label">
+					<p># Sticks</p>
+				</div>
+				<p id="remain">20</p>
+			</div>
+			<div id="current-cont" class="flex-container">
+				<div id="current-label">
+					<p>Current Player</p>
+				</div>
+				<p id="current">1</p>
+			</div>
+			<div id="pickup-cont" class="flex-container">
+				<div id="pickup-label">
+					<p># to Pickup</p>
+				</div>
+				<div id="pickup">
+					<input id="pick-sticks" type="number" min="1" max="3" value="1">
+				</div>
+				<button id="pickup-btn">Pick Up Sticks</button>
+			</div>
+		</main>
+		<footer>
+
+		</footer>
+	</div>
+	<div id="modal-layer">
+		<div id="wins-overlay" class="flex-container">
+			<h1>Game Over</h1>
+			<div>
+				<p><span id="winner"></span> Wins</p>
+			</div>
+			<button id="close-modal">Play Again</button>
+		</div>
+	</div>
+</body>
+
+</html>

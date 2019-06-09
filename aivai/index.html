@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Sticks - AI v AI</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	 crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/sticks.js"></script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header>
+			<h1>Sticks
+				<br>AI v AI Learning</h1>
+		</header>
+		<main>
+			<div id="msg-box" class="flex-container">
+				<h3 id="msg">Welcome to the Sticks Game
+					<br>Loading AI....</h3>
+			</div>
+			<div id="game-cnt-cont" class="flex-container">
+				<div id="game-cnt-label">
+					<p># Games to Play</p>
+				</div>
+				<div id="game-cnt">
+					<input id="play-games-cnt" type="number" min="1" max="10000" value="1" step="1">
+				</div>
+				<button id="play-games-btn" disabled>Play Games</button>
+			</div>
+		</main>
+		<footer>
+
+		</footer>
+	</div>
+	<div id="modal-layer">
+		<div class="flex-container">
+			<h1 id="current-game-cnt"></h1>
+		</div>
+	</div>
+</body>
+
+</html>
