@@ -3,7 +3,7 @@
 	 ai.dat, a table for reinforcement learning
 	 in the game Sticks */
 
-$filename = 'ai.dat';
+$filename = '../../ai.dat';
 
 // get data from $_POST
 $ai = $_POST['moves'];

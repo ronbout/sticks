@@ -3,7 +3,7 @@
 	 ai.dat, a table for reinforcement learning
 	 in the game Sticks */
 
-	 $filename = 'ai.dat';
+	 $filename = '../../ai.dat';
 
 	 if ( !($return_ai = @file($filename, FILE_IGNORE_NEW_LINES) ) )  {
 		 $return_ai = array(
